@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tea Shop</title>
+    <link rel="stylesheet" href="shop.css" />
+    <link rel="stylesheet" href="cart.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rokkitt&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <a href="/">
+        <div class="logo">
+          <img
+            src="https://i.pinimg.com/originals/80/b0/ab/80b0ab09f5bcf59d9e51c2bc404862b3.png"
+            alt=""
+            class="logo_img"
+          />
+        </div>
+      </a>
+      <a href="shop" class="shop__btn">
+        <button class="shop__btn-1">Shop</button>
+      </a>
+      <a href="about-us" class="aus__btn">
+        <button class="aus__btn-1">About Us</button>
+      </a>
+      
+     
+      <a href="/cart">
+      <svg class="cart__icon" width="63" height="62" viewBox="0 0 63 62" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <rect width="63" height="62" rx="5" fill="url(#pattern0)"/>
+          <defs>
+          <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+          <use xlink:href="#image0" transform="translate(0 -0.00806452) scale(0.00444444)"/>
+          </pattern>
+          <image id="image0" width="225" height="225" xlink:href="data:image/png;base64,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"/>
+          </defs>
+      </svg>
+    </a> 
+    <% if (total > 0) { %>
+      <div class="bottombox__four"> <h3>Order Total:    $ <%= tprice %> </h3></div>
+      <div class="sidebox__four"><div class="quantity"><h1>Quantity</h1></div>
+      <div class="sidebox_info">
+        <% if (white.qty > 0) { %>
+          <article class="white__side">
+          <header class="white__sideheader">
+            <h1 class="white__quantities">$<%= white.price %> x <%= white.qty %></h1>
+          </header>
+          </article>
+        <% } %>
+        <% if (black.qty > 0) { %>
+            <article class="black__side">
+                <header class="black__sideheader">
+                  <h1 class="black__quantities">$<%= black.price %> x <%= black.qty %></h1>
+                </header>
+            </article>    
+        <% } %>
+        <% if (green.qty > 0) { %>
+            <article class="green__side">
+                <header class="green__sideheader">
+                  <h1 class="green__quantities">$<%= green.price %> x <%= green.qty %></h1>
+                </header>
+            </article>       
+        <% } %>
+        <% if (oolong.qty > 0) { %>
+            <article class="oolong__side">
+                <header class="oolong__sideheader">
+                  <h1 class="oolong__quantities">$<%= oolong.price %> x <%= oolong.qty %></h1>
+                </header>
+            </article>       
+        <% } %>
+      </div>
+    </div>
+      <div class="box__four">
+        <div class="items"><h1>Items</h1></div>
+        <div class="flexbox_inverted">
+          <% if (white.qty > 0) { %>
+          <article class="white product-item">
+            <div class="white__image">
+              <img
+                src="<%= white.imageUrl %>"
+                alt="<%= white.title %>"
+                width="80px"
+                height="80px"
+              />
+            </div>
+
+          </article>
+          <% } %>
+          <% if (black.qty > 0) { %>
+            <article class="black product-item">
+              <div class="black__image">
+                <img
+                  src="<%= black.imageUrl %>"
+                  alt="<%= black.title %>"
+                  width="80px"
+                  height="80px"
+                />
+              </div>
+            </article>
+            <% } %>
+            <% if (green.qty > 0) { %>
+              <article class="green product-item">
+                <div class="green__image">
+                  <img
+                    src="<%= green.imageUrl %>"
+                    alt="<%= green.title %>"
+                    width="80px"
+                    height="80px"
+                  />
+                </div>
+
+              </article>
+              <% } %>
+              <% if (oolong.qty > 0) { %>
+                <article class="oolong product-item">
+                  <div class="oolong__image">
+                    <img
+                      src="<%= oolong.imageUrl %>"
+                      alt="<%= oolong.title %>"
+                      width="80px"
+                      height="80px"
+                    />
+                  </div>
+
+                </article>
+                <% } %>
+        </div>
+        <div class="flexbox_info">
+          <% if (white.qty > 0) { %>
+            <article class="white__info">
+            <header class="white__header">
+              <h1 class="white__title">White</h1>
+              <h1 class="white__title">Tea</h1>
+            </header>
+            </article>
+          <% } %>
+          <% if (black.qty > 0) { %>
+            <article class="black__info">
+            <header class="black__header">
+              <h1 class="black__title">Black</h1>
+              <h1 class="black__title">Tea</h1>
+            </header>
+            </article>
+          <% } %>
+          <% if (green.qty > 0) { %>
+            <article class="green__info">
+            <header class="green__header">
+              <h1 class="green__title">Green</h1>
+              <h1 class="green__title">Tea</h1>
+            </header>
+            </article>
+          <% } %>
+          <% if (oolong.qty > 0) { %>
+            <article class="oolong__info">
+            <header class="oolong__header">
+              <h1 class="oolong__title">Oolong</h1>
+              <h1 class="oolong__title">Tea</h1>
+            </header>
+            </article>
+          <% } %>
+        </div>
+    
+        
+      
+        <% } else { %>
+        <h1 class="noprods">No Products Found!</h1>
+        <% } %>
+</body>
+</html>

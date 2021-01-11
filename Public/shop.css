@@ -1,0 +1,157 @@
+body {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 2;
+}
+
+.logo_img {
+  position: relative;
+  top: -2rem;
+  height: 35vmax;
+}
+
+.shop__btn-1 {
+  position: absolute;
+  z-index: 2;
+  width: 15vw;
+  height: 3vh;
+  top: 26vmax;
+  left: 34vw;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5vmax;
+  text-decoration: none;
+  background-color: rgba(56, 215, 255, 0.8); /* Green */
+  border: none;
+  border-radius: 0.4rem;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  inline-size: 15vw;
+}
+
+.aus__btn-1 {
+  position: absolute;
+  z-index: 2;
+  width: 15vw;
+  height: 3vh;
+  top: 26vmax;
+  left: 50vw;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5vmax;
+  text-decoration: none;
+  background-color: rgba(70, 66, 66, 0.8); /* Green */
+  border: none;
+  border-radius: 0.4rem;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  inline-size: auto;
+}
+
+@media only screen and (min-width: 600px) {
+  .logo_img {
+    position: relative;
+    top: -2rem;
+    height: 18rem;
+  }
+
+  .message__welcome-two {
+    width: 100vw;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 1;
+    font-family: Allura;
+    font-style: normal;
+    font-size: 4rem;
+    color: rgb(56, 53, 53);
+    top: 18.5rem;
+  }
+
+  .shop__btn-1 {
+    width: 8vw;
+    height: 4vh;
+    top: 28vh;
+    left: 41vw;
+  }
+
+  .aus__btn-1 {
+    width: 8vw;
+    height: 4vh;
+    top: 28vh;
+    left: 51vw;
+    inline-size: auto;
+  }
+
+  .aus__btn-1:hover {
+    background-color: rgba(56, 215, 255, 0.8);
+  }
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.product__title {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.product__price {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.addtocart__btn {
+  display: flex;
+  justify-content: center;
+}
+.addtocart__btn-1,
+.addtocart__btn-2,
+.addtocart__btn-3,
+.addtocart__btn-4 {
+  height: 5vh;
+  text-align: center;
+  background: #465a3c;
+  box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0.4rem;
+  width: 8vw;
+  color: white;
+  font-size: 1.5vmax;
+  inline-size: auto;
+  margin: 0 7.2vw 7.3vw ;
+}
+
+
+.addtocart__btn-1:hover {
+  box-shadow: 0 0 0 0.25vw rgba(56, 215, 255, 0.6);
+}
+.addtocart__btn-2:hover {
+  box-shadow: 0 0 0 0.25vw rgba(56, 215, 255, 0.6);
+}
+.addtocart__btn-3:hover {
+  box-shadow: 0 0 0 0.25vw rgba(56, 215, 255, 0.6);
+}
+.addtocart__btn-4:hover {
+  box-shadow: 0 0 0 0.25vw rgba(56, 215, 255, 0.6);
+}
+
+.cart__icon {
+  position: absolute;
+  margin-left: 93.5vw;
+  top: 2.5vh;
+}

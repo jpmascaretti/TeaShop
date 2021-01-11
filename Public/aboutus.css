@@ -1,0 +1,188 @@
+body {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+.background {
+  position: absolute;
+  height: 100vmax;
+  width: 100vmax;
+  background-image: url(https://i.pinimg.com/originals/f2/e0/b0/f2e0b02cbc3979581468093cb0ea86e2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 2;
+}
+
+.logo_img {
+  position: relative;
+  top: -2rem;
+  height: 35vmax;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  z-index: 2;
+}
+
+.blackdrop {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 2;
+}
+
+.message__one {
+  width: 100vw;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  font-family: Allura;
+  font-style: normal;
+  font-size: 3.5vmax;
+  color: white;
+  top: 33vh;
+  z-index: 3;
+}
+
+.message__two {
+  width: 100vw;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  font-family: Allura;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3.5vmax;
+  color: white;
+  top: 38vh;
+  z-index: 3;
+}
+
+.description {
+  width: 100vw;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  font-family: Rokkitt;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3.2vmax;
+  color: white;
+  top: 53vh;
+  z-index: 3;
+}
+.shop__btn-1 {
+  position: absolute;
+  z-index: 2;
+  width: 15vw;
+  height: 3vh;
+  top: 26vmax;
+  left: 34vw;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5vmax;
+  text-decoration: none;
+  background-color: rgb(70, 66, 66, 0.8); /* Green */
+  border: none;
+  border-radius: 0.4rem;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  inline-size: 15vw;
+}
+
+.aus__btn-1 {
+  position: absolute;
+  z-index: 2;
+  width: 15vw;
+  height: 3vh;
+  top: 26vmax;
+  left: 50vw;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5vmax;
+  text-decoration: none;
+  background-color: rgba(56, 215, 255, 0.8);
+  border: none;
+  border-radius: 0.4rem;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  inline-size: auto;
+}
+
+@media only screen and (min-width: 600px) {
+  .background {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .logo_img {
+    position: relative;
+    top: -2rem;
+    height: 18rem;
+  }
+
+  .shop__btn-1 {
+    width: 8vw;
+    height: 4vh;
+    top: 28vh;
+    left: 41vw;
+  }
+
+  .message__one {
+    width: 100vw;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    font-family: Allura;
+    font-style: normal;
+    font-size: 4rem;
+    color: white;
+    top: 33vh;
+  }
+
+  .message__two {
+    width: 100vw;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    font-family: Allura;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 4rem;
+    color: white;
+    top: 42vh;
+  }
+  .aus__btn-1 {
+    width: 8vw;
+    height: 4vh;
+    top: 28vh;
+    left: 51vw;
+    inline-size: auto;
+  }
+  .shop__btn-1:hover {
+    background-color: rgba(56, 215, 255, 0.8);
+  }
+
+  .description {
+    font-size: 2.5vmax;
+    top: 60vh;
+  }
+}

@@ -1,0 +1,137 @@
+body {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.background {
+  position: absolute;
+  height: 100vmax;
+  width: 100vmax;
+  background-image: url(https://www.twinings.co.uk/app_/responsive/TwiningsUKI/media/content/About-Tea/shutterstock_126275183.jpg?w=1260);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 2;
+}
+
+.logo_img {
+  position: relative;
+  top: -2rem;
+  height: 35vmax;
+}
+
+.message__welcome-two {
+  width: 100vw;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 1;
+  font-family: Allura;
+  font-style: normal;
+  font-size: 5vmax;
+  color: rgb(56, 53, 53);
+  top: 36vmax;
+}
+
+.shop__btn-1 {
+  position: absolute;
+  z-index: 2;
+  width: 15vw;
+  height: 3vh;
+  top: 26vmax;
+  left: 34vw;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5vmax;
+  text-decoration: none;
+  background-color: rgb(70, 66, 66, 0.8); /* Green */
+  border: none;
+  border-radius: 0.4rem;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  inline-size: 15vw;
+}
+
+.aus__btn-1 {
+  position: absolute;
+  z-index: 2;
+  width: 15vw;
+  height: 3vh;
+  top: 26vmax;
+  left: 50vw;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5vmax;
+  text-decoration: none;
+  background-color: rgba(70, 66, 66, 0.8); /* Green */
+  border: none;
+  border-radius: 0.4rem;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  inline-size: auto;
+}
+
+@media only screen and (min-width: 600px) {
+  .background {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(https://www.twinings.co.uk/app_/responsive/TwiningsUKI/media/content/About-Tea/shutterstock_126275183.jpg?w=1260);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .logo_img {
+    position: relative;
+    top: -2rem;
+    height: 18rem;
+  }
+
+  .message__welcome-two {
+    width: 100vw;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 1;
+    font-family: Allura;
+    font-style: normal;
+    font-size: 4rem;
+    color: rgb(56, 53, 53);
+    top: 21.5vmax;
+  }
+
+  .shop__btn-1 {
+    width: 8vw;
+    height: 4vh;
+    top: 28vh;
+    left: 41vw;
+  }
+
+  .aus__btn-1 {
+    width: 8vw;
+    height: 4vh;
+    top: 28vh;
+    left: 51vw;
+    inline-size: auto;
+  }
+  .shop__btn-1:hover {
+    background-color: rgba(56, 215, 255, 0.8);
+  }
+
+  .aus__btn-1:hover {
+    background-color: rgba(56, 215, 255, 0.8);
+  }
+}

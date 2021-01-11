@@ -1,0 +1,13 @@
+Idea:
+
+Apenas se aprieta algun boton que sea "Add to cart" en vez de redirigir a 'shop'
+puedo redirigir a shop/cart re-renderizando todo el shop con el nuevo valor en el cart. 
+Finalmente cuando se apreta el cart ahi redirige a /cart con todos los items ya incorporados
+
+Idea 3: 
+
+Eliminar products.txt cuando se pasa la screen del cart
+
+Idea 4: 
+
+For each case 4x better by using unique quantities in general controller render cart
